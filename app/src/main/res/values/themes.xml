@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Assignment1" parent="Theme.MaterialComponents.DayNight.DarkActionBar" />
+    <item name="colorPrimary" type="color">@color/white</item>
+    <item name="colorPrimaryVariant" type="color">@color/white</item>
+    <color name="colorOnPrimary" type="color">@color/orange</color>
+
+</resources>

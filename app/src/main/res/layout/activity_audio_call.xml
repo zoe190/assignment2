@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".audio_call">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:background="#A39E9E">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="120dp"
+            android:textColor="#000000"
+            android:text="Caller Name"
+            />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="160dp"
+            android:text="00:58"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="571dp">
+
+        <ImageView
+            android:id="@+id/iconImageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/baseline_minimize" />
+
+        <ImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="95dp"
+            android:src="@drawable/round_mic" />
+
+        <ImageView
+            android:id="@+id/iconImageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="192dp"
+            android:src="@drawable/round_speaker" />
+
+        <ImageView
+            android:id="@+id/iconImageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/round_pause" />
+
+        <ImageView
+            android:id="@+id/iconImageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="192dp"
+            android:src="@drawable/round_close"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
