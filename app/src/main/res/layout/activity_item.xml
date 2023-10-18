@@ -226,6 +226,7 @@
             android:background="#AAA8A8"
             android:layout_below="@id/toolbar2" />
         <Button
+            android:id="@+id/rentbutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/toolbar2"

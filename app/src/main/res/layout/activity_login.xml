@@ -121,14 +121,12 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
-            android:background="@color/orange"
             android:backgroundTint="@color/orange"
             android:text="Login"
-            android:textColor="#795548"
             android:textSize="20sp"
             android:textStyle="bold" />
 

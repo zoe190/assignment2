@@ -2,6 +2,7 @@ package com.example.assignment1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,19 +10,20 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class activity_login extends AppCompatActivity {
-   private Button button;
+    Button button;
    TextView textView5;
    TextView textView8;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        button=(Button) findViewById(R.id.button);
+        button=(Button) findViewById(R.id.button1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openfifth_screen();
-
+                Intent intent=new Intent(activity_login.this,Navigation.class);
+                startActivity(intent);
             }
         });
         textView5=findViewById(R.id.textView5);
@@ -43,11 +45,6 @@ public class activity_login extends AppCompatActivity {
         });
 
     }
-    public void openfifth_screen(){
-        Intent intent=new Intent(this,fifth_screen.class);
-        startActivity(intent);
-    }
-
 
 }
 

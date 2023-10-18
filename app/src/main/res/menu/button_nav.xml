@@ -11,8 +11,9 @@
         android:title="Search" />
 
     <item
-        android:id="@+id/placeholder"
-        android:title="" />
+        android:id="@+id/Add"
+        android:icon="@drawable/baseline_add_24"
+        android:title="Add" />
 
     <item
         android:id="@+id/Chat"

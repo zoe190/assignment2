@@ -34,7 +34,7 @@ TextView textView6;
         });
     }
     public void openloginpage() {
-        Intent intent = new Intent(this, activity_login.class);
+        Intent intent = new Intent(this, Navigation.class);
         startActivity(intent);
     }
 }
