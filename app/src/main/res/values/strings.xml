@@ -2,4 +2,5 @@
     <string name="app_name">Assignment1</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_from_ad_where_title_like_query_or_description_like_query">SELECT * FROM Ad WHERE title LIKE :query OR description LIKE :query</string>
 </resources>

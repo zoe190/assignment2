@@ -11,23 +11,24 @@ import android.widget.TextView;
 public class profile extends AppCompatActivity {
     TextView text;
     ImageView image2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        text=findViewById(R.id.itemName);
+        text = findViewById(R.id.itemName);
+        image2 = findViewById(R.id.editprofile);
         text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(profile.this,item.class);
+                Intent intent = new Intent(profile.this, item.class);
                 startActivity(intent);
             }
         });
-        image2=findViewById(R.id.editprofile);
         image2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(profile.this,edit_profile.class);
+                Intent intent = new Intent(profile.this, edit_profile.class);
                 startActivity(intent);
             }
         });

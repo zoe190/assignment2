@@ -7,32 +7,29 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+import android.os.Handler;
 import java.util.Timer;
 import java.util.TimerTask;
 
 
 public class MainActivity extends AppCompatActivity {
- Timer timer;
+    Timer timer;
 
-
+    private static final int delay = 5000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         timer=new Timer();
-        timer.schedule(new TimerTask() {
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(MainActivity.this, activity_login.class );
+                // Create an intent to navigate to the next screen (replace NextActivity.class with your next activity)
+                Intent intent = new Intent(MainActivity.this, activity_login.class);
                 startActivity(intent);
-                finish();
-
+                finish(); // Close the splash screen activity
             }
-
-        },2000);
-
-
+        }, delay);
     }
 }
